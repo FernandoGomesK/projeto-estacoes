@@ -63,9 +63,14 @@ function calcula_estacao()
       estacao = "primavera";
       vet_estacao = primavera;
     }
-    else {
+    else if (mes_input == 12 || mes_input == 1 || mes_input == 2) {
       estacao = "verão";
       vet_estacao = verao;
+    }
+    else 
+    {
+      alert("Informe um mês válido!");
+      return
     }
 
     document.getElementById("nome_estacao").textContent = estacao;
